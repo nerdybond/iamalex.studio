@@ -1,0 +1,56 @@
+.switch {
+    position: relative;
+    width: 60px;
+    height: 35px;
+    background-color: #cacaca;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition-delay: 200ms;
+    justify-items: center;
+    margin-right: 45%;
+    border-color: black;
+}
+
+@media only screen and (max-width: 400px) {
+    .switch {
+        margin-right: 40%;
+    }
+  }
+
+
+.switch[data-state="checked"]{
+    background-color: #666679;
+    border-color: white;
+}
+
+.switchThumb {
+    min-width: 33px;
+    min-height: 33px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-size: cover;
+    position: absolute;
+    justify-items: center;
+    bottom: 1px;
+    transition: transform 0.2s ease-in-out, background-image 0.2 ease-in-out;
+}
+
+
+:active.switchThumb {
+    border: 1.5px solid;
+}
+
+.switchThumbOff {
+    background-image: url('/navBar/Light.webp');
+    transform: translateX(2px);
+    transition: transform 0.2s ease-in-out
+}
+
+
+.switchThumbOn {
+    background-image: url('/navBar/Dark.webp');
+    transform: translateX(26px);
+    transition: transform 0.2s ease-in-out
+}

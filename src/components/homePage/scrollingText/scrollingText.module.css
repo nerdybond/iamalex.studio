@@ -1,0 +1,62 @@
+.carouselContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    min-height: 125px;
+    align-items: center;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    background-color: #7A7A7A;
+    overflow: hidden;
+}
+
+
+
+
+.carouselTrack {
+    display: flex;
+    flex-shrink: 0;
+    position: absolute;
+    flex-direction: row;
+    width: 200%;
+    margin: 10px 0 10px 0;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    animation: slide 20s linear infinite;
+  }
+
+
+
+@keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -150%;
+    }
+  }
+
+.carouselCard {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 1.5% 3%;
+    border-right: 4px solid black;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+  .carouselTrack {
+    margin: 30px 0 30px 0;
+  }
+}

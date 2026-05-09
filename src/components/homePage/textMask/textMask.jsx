@@ -15,6 +15,8 @@ export default function TextMask ({ maskImage, maskPosition }) {
         const easing = 0.7;
         let easedScrollProgress = 0;
 
+       
+
         useEffect (() => {
                 const handleScroll = () => {
                         requestAnimationFrame(animate);
@@ -53,19 +55,21 @@ export default function TextMask ({ maskImage, maskPosition }) {
         return easedScrollProgress;
         
         }
+        
 
         return (
                 <main className={styles.main}>
                         <div ref={container} className={styles.container}>
                                 <div ref={stickyMask} className={styles.stickyMask}
                                           style={{ maskImage, WebkitMaskImage: maskImage, maskPosition }}>
-                                        <video autoPlay 
+                                        <video autoPlay
                                         muted 
                                         loop 
                                         playsInline
                                         crossOrigin='anonymous'
+                                        preload='auto'
                                         > 
-                                                <source src="../../svg-mask/video.mp4" type="video/mp4"/>
+                                                <source src="/video.mp4" type="video/mp4"/>
                                         </video>
                                 </div>
                         </div>

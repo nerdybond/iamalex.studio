@@ -30,8 +30,8 @@ export default function TextMask ({ maskImage, maskPosition }) {
         const animate = () => {
         const maskSizeProgress = targetMaskSize * getScrollProgress();        
         if (stickyMask.current) {
-                stickyMask.current.style.maskSize = (intialMaskSize + maskSizeProgress) * 120 + "%";
-                stickyMask.current.style.webkitMaskImage = (intialMaskSize + maskSizeProgress) * 120 + "%";
+                stickyMask.current.style.maskSize = (intialMaskSize + maskSizeProgress) * 200 + "%";
+                stickyMask.current.style.webkitMaskImage = (intialMaskSize + maskSizeProgress) * 200 + "%";
               }
               requestAnimationFrame(animate);
         };
@@ -56,12 +56,6 @@ export default function TextMask ({ maskImage, maskPosition }) {
 
         return (
                 <main className={styles.main}>
-                        <div className='flex flex-col font-primary text-5xl'> 
-                        <div className="mb-2 self-center">Designer</div>
-                        <div className="ml-8 mb-2 self-start">Web Developer </div>
-                        <div className="mr-8 self-end">Photographer</div>
-                        </div>
-
                         <div ref={container} className={styles.container}>
                                 <div ref={stickyMask} className={styles.stickyMask}
                                           style={{ maskImage, WebkitMaskImage: maskImage, maskPosition }}>

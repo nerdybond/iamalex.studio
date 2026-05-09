@@ -55,8 +55,14 @@ export default function Home() {
           className="flex flex-col w-screen items-center justify-center">
 
           <NavBar applyStyles={setPageStyles} lightDarkSwitchCombinations={LightDarkSwitchCombinations} />
-          <div className="flex flex-row items-center justify-center
-                          mt-[25dvh] min-[450px]:mt-[20dvh] sm:mt-[10dvh] md:mt-[6dvh] lg:mt-[15dvh] xl:mt-[15dvh]">
+            <div className='flex flex-col font-primary font-medium text-4xl sm:text-6xl w-full
+                            max-[450px]:mt-[12dvh] sm:mt-[10dvh] md:mt-[6dvh] lg:mt-[15dvh] xl:mt-[15dvh]
+                            max-[450px]:mb-[-3dvh] sm:mb-[-4dvh]'> 
+              <div className="mb-2 max-[450px]:self-end max-[450px]:mr-[10dvw] -rotate-6 self-center">Designer</div>
+              <div className="max-[450px]:ml-2 sm:ml-8 mb-2 self-start">Web Developer </div>
+              <div className="max-[450px]:mr-2 sm:mr-8 rotate-6 self-end">Photographer</div>
+            </div>
+          
             {/* <p className="text-4xl  font-secondary">HEY THERE!</p>
             <Image
               src={'/wave.svg'}
@@ -65,7 +71,7 @@ export default function Home() {
               alt="wave"
               className='animate-waving-hand'
             /> */}
-          </div>
+          
           {/* <HeroTextCarousel heroWords={pageStyles.heroText} heroCarouselWords={pageStyles.heroCarouselWords}/>            */}
               <TextMask maskImage={pageStyles.maskImage} maskPosition={pageStyles.maskPosition} />
 

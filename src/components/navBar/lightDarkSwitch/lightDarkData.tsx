@@ -31,7 +31,7 @@ export const LightDarkSwitchCombinations = [
     freeSpaceText: 'Free Space',
 
     aboutUsTitle: 'Content is ever changing. So should we.',
-    aboutUsText: 'I wanted to start this studio to show you both what is involved with running your own creative studio, and to show the wealth of experience I have amassed through years of committed work.',
+    aboutUsText: 'I wanted to start this studio to show you both what is involved with running your own creative studio, and to show the wealth of experience I have amassed through years of committed work. ',
 },
 
 {

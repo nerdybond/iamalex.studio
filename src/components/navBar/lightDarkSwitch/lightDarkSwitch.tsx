@@ -35,5 +35,6 @@ const LightDarkSwitch: FC<LightDarkSwitchProps> = React.memo(({ applyStyles, com
         </LDSwitch>
     );
 });
+LightDarkSwitch.displayName = 'LightDarkSwitch';
 
 export default LightDarkSwitch;
